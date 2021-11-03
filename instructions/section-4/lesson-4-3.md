@@ -118,7 +118,6 @@ These tasks are **entirely optional**, but if you'd like a challenge then do you
 - [ ] (Optional) Hide the #messages section when the list is empty
 - [ ] (Optional) Create an "edit" button for each message entry that allows the user to input a new/modified message
 
-
 ### Final Step:
 
 Check the status of your local repository to double-check the changes you made:
