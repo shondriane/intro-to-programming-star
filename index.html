@@ -12,10 +12,19 @@
         h1 {
           color: rgba(221, 24, 24, 0.959);
         }
+        #shondriane {
+          text-align: center;
+          color: black;
+        }
+        button[type="submit"] {
+          background: red;
+          color: white;
+        }
       </style>
       <script src="js/index.js" defer></script>
     </head>
     <body>
+      <h1 id="Shondriane">Shondriane Mesa-Wise</h1>
       <h1>About Me</h1>
 
       <p>
@@ -29,7 +38,10 @@
 
       <h1>Experience</h1>
 
-      <p>Code the Dream Java Script Basics</p>
+      <p>
+        Finance, Social Compliance Audits, Business Development, and Code the
+        Dream Java Script Basics
+      </p>
 
       <section id="skills">
         <h2>Skills</h2>
@@ -55,7 +67,29 @@
           </li>
         </ul>
       </section>
-
+      <section id="messages">
+        <h2>Leave a Message</h2>
+        <form action="leaveamessage.html" method="post" id="messageForm">
+          <label>Name</label><br />
+          <input type="text" , name="name" ,required="true," id="name" /><br />
+          <label>E-mail</label><br />
+          <input
+            type="email"
+            ,
+            name="e-mail"
+            ,
+            required="true,"
+            id="e-mail"
+          /><br />
+          <label>Message</label><br />
+          <textarea name="message" , required="true" id="message"></textarea
+          ><br />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <h2>Messages</h2>
+      <ul></ul>
+      <section></section>
       <footer></footer>
     </body>
   </html>
