@@ -16,7 +16,6 @@ const skills = [
   "Git",
   "CSS",
   "HTML",
-  
 ];
 const skillsSection = document.getElementById("skills");
 const skillsList = document.querySelector(".skills-list");
@@ -27,30 +26,37 @@ for (let i = 0; i < skills.length; i++) {
   skill.classList.add("list-item");
   skillsList.appendChild(skill);
 }
-const messageForm = document.getElementById("messageForm");
+const messageForm = document.querySelector("[id='messageForm']");
 
-messageForm.addEventListener("submit", function (event) {
-  event.preventDefault();
-  var name = document.getElementById("name").value;
-  console.log(name);
-  var email = document.getElementById("e-mail").value;
-  console.log(email);
-  var message = document.getElementById("message").value;
-  console.log(message);
+messageForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const form = e.target;
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+  console.log(name, email, message);
 
-  var messageSection = document.querySelector("#messages");
-  var messageList = messageSection.querySelector("ul");
-  var newMessage = document.createElement("li");
-  newMessage.innerHTML = `<a href=mailto:${email}>${name}</a><span> wrote: ${message} </span>`;
-
+  // Display Messages in List
+  let messageSection = document.getElementById("messages");
+  let messageList = messageSection.querySelector("ul");
+  let newMessage = document.createElement("li");
+  newMessage.innerHTML = `<a href=“mailto:${email}”>${name}</a>
+            <span id ="spanMessage"> wrote: ${message}</span>`;
+  
+  
+  // Add remove button to each message
   let removeButton = document.createElement("button");
-  removeButton.innerText = "remove";
+  removeButton.innerHTML = "remove";
   removeButton.type = "button";
-  removeButton.addEventListener("click", () => {
-    let entry = removeButton.ParentNode;
+
+  removeButton.addEventListener("click", (e) => {
+    let entry = e.target.parentNode;
     entry.remove();
   });
+
+  // Adding the remove button and message to messageList
   newMessage.appendChild(removeButton);
   messageList.appendChild(newMessage);
-  document.getElementById("messageForm").reset();
+
+  messageForm.reset();
 });

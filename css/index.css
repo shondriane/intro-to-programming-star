@@ -1,0 +1,117 @@
+#shondriane {
+  text-align: center;
+  padding: 30px;
+}
+body {
+  background-color: rgba(255, 235, 205, 0.945);
+  color: purple;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  margin: 30px;
+}
+
+h1,
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+}
+section{
+  margin: 20px;
+  padding:10px;
+}
+#codingPic{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:2.5rem;
+  max-width:32 rem;
+  max-height:32rem;
+  margin:auto;
+}
+
+
+ .skills-list, .experience,.messages {
+  display:block;
+  list-style: square;
+ 
+  
+  
+}
+.socialConnections{
+  list-style: none;
+}
+#contactMe{
+  text-align: center;
+}
+label {
+  font-size:26px;
+  color:purple;
+}
+
+form {
+  max-width:25rem;
+  margin:auto;
+  background-color:rgba(255, 235, 205, 0.365);
+  border:1px solid purple;
+  border-radius: 5px;
+  padding:1.75rem;
+  box-sizing: inherit;
+  display: block;
+  box-shadow: 0px 2px 15px 2px;
+  
+}
+input {
+width:100%
+border: 1px solid blue;
+border-radius: 5px;
+padding: 0.4375rem;
+display:block;
+margin:0px;
+text-rendering: auto;
+letter-spacing:normal;
+}
+
+textarea {
+  font-size: 20px;
+  padding: 25px;
+  border: 3px solid purple;
+  margin: 0px;
+  box-sizing: inherit;
+  text-size-adjust: 100%;
+  max-width: 35rem;
+  border-radius: 4px;
+}
+button[type="submit"] {
+  background-color:purple;
+  border:1px solid blanchedalmond;
+  padding: 10px;
+  border-radius: 10px;
+  
+  color: white;
+  
+}
+#container, button[type="submit"]{
+text-align: left;
+margin:20px;
+}
+
+
+
+
+footer {
+  padding: 0px;
+  margin: 10;
+  background-color: rgba(202, 129, 20, 0);
+}
+@media (min-width: 500px){
+  h1,h2 {
+    font-size: 36px;
+    margin-top: 20px;
+    line-height:40px;
+  }
+  li{
+    display:block
+    box-shadow: 0px 2px 15px 2px;
+  }
+}
