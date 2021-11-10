@@ -4,44 +4,34 @@
       <title>Shondriane Mesa-Wise</title>
       <meta name="Shondriane" content="About Me" />
       <meta name="viewport" content="width=device-width, initial-scale 1.0" />
-
-      <style>
-        body {
-          background-color: rgba(255, 136, 0, 0.055);
-        }
-        h1 {
-          color: rgba(221, 24, 24, 0.959);
-        }
-        #shondriane {
-          text-align: center;
-          color: black;
-        }
-        button[type="submit"] {
-          background: red;
-          color: white;
-        }
-      </style>
       <script src="js/index.js" defer></script>
+      <link rel="stylesheet" href="css/index.css" />
     </head>
     <body>
+    
       <h1 id="Shondriane">Shondriane Mesa-Wise</h1>
+  
+      
+      <img src= "https://i.guim.co.uk/img/media/6b41492666bb45cacf78e67fa03c9f24619a9856/0_389_2362_1417/master/2362.jpg?width=940&quality=85&auto=format&fit=max&s=d7c82d136738f53bafd037ce20430371"
+      alt: girlClimbingComputerHardDrive id="codingPic">
       <h1>About Me</h1>
-
-      <p>
-        Hi, I'm Shondriane, a software engineer student with Code the Dream,
+      <p id="about">
+        Hi, I'm Shondriane, a human rights defender and software engineer student with Code the Dream,
         based in New York City. I recently graduated in 2020 from San Francisco
         State University with a Bachelor of Science in Business Management and a
         Minor in Labor and Employment Relations. I love solving complex problems
         and looking at ways to enhance the users' experience. I am passionate
         about learning and spend most of my time developing new skillsets.
       </p>
-
+    
       <h1>Experience</h1>
 
-      <p>
-        Finance, Social Compliance Audits, Business Development, and Code the
-        Dream Java Script Basics
-      </p>
+      <ol class="experience" >
+       <li>Finance </li>
+      <li> Social Compliance</li>
+      <li> Business Development</li>
+      <li> Code the Dream Java Script Basics</li>
+      </ol>
 
       <section id="skills">
         <h2>Skills</h2>
@@ -50,7 +40,7 @@
 
       <section>
         <h1>Connect</h1>
-        <ul style="list-style: none">
+        <ul class="socialConnections">
           <li><a href="mailto:shondriane.wise@yahoo.com">Email me</a></li>
           <li>
             <a
@@ -67,28 +57,39 @@
           </li>
         </ul>
       </section>
-      <section id="messages">
-        <h2>Leave a Message</h2>
+      
+        <h2 id="contactMe">Leave a Message</h2>
         <form action="leaveamessage.html" method="post" id="messageForm">
+    
+        
           <label>Name</label><br />
-          <input type="text" , name="name" ,required="true," id="name" /><br />
-          <label>E-mail</label><br />
-          <input
-            type="email"
-            ,
-            name="e-mail"
-            ,
-            required="true,"
-            id="e-mail"
-          /><br />
+         <input type="text" , name="name" ,required="true," id="name" /> <br> 
+       
+   
+       
+           <label>E-mail</label><br />
+         <input
+           type="email"
+           ,
+           name="email"
+           ,
+           required="true,"
+           id="email"
+         /><br />
+       
+       
           <label>Message</label><br />
-          <textarea name="message" , required="true" id="message"></textarea
-          ><br />
-          <button type="submit">Submit</button>
-        </form>
+         <textarea name="message" , required="true" id="message"></textarea
+         ><br />
+         <div id="container">
+       <button type=“submit”>Submit</button>
+       </div>
+   </form>
       </section>
+      <section id="messages">
       <h2>Messages</h2>
       <ul></ul>
+    </section>
       <section></section>
       <footer></footer>
     </body>
