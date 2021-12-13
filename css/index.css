@@ -1,6 +1,7 @@
 #shondriane {
   text-align: center;
   padding: 30px;
+  font-family: cursive;
 }
 body {
   background-color: rgba(255, 235, 205, 0.945);
@@ -36,6 +37,7 @@ html{
   padding:0;
   box-sizing:border-box;
 }
+
 ul{
   list-style-type: none;
 }
@@ -67,7 +69,7 @@ nav a {
   color: var(--primary-color);
   transition: var(--transition);
 }
-nav a: hover{
+nav a:hover{
   color: var(--secondary-color);
   border-bottom: 2px solid var (--secondary-color);
 }
@@ -98,6 +100,7 @@ h2 {
 section{
   margin: 20px;
   padding:10px;
+  text-align: center;
 }
 .coding{
   display:flex;
@@ -119,7 +122,7 @@ section{
 }
 .picture{
   width: 50%;
-  flex: ;
+  display: flex;
 
 }
 .bio{
@@ -138,22 +141,23 @@ section{
   padding:0.3 rem0;
 }
 
- .skills-list,.messages {
+.skills-list,.messages, .project-list,a{
   display:block;
-  list-style: square;
+
  }
 
   .experience{
    display:flex;
 flex-flow: wrap;
+text-align: center;
 flex-direction: column;
 justify-content: space-between;
 flex: center;
-list-style-type:square;
+list-style-type:none;
 padding: 20px;
-margin: 5px;
-height: 100px;
-border: 2px solid var(--primary-shadow)
+margin: 10px;
+height: 150px;
+border: 2px solid var(--primary-shadow);
   }
   
 
@@ -169,11 +173,11 @@ label {
   color:--primary-shadow;
 }
 
-form {
+form,.experience,.skills-list, .project-list{
   max-width:25rem;
   margin:auto;
   background-color:rgba(255, 235, 205, 0.365);
-  border:1px solid --primary-shadow;
+  border:2px solid --primary-shadow;
   border-radius: 5px;
   padding:1.75rem;
   box-sizing: inherit;
@@ -182,7 +186,7 @@ form {
   
 }
 input {
-width:100%
+width:100%;
 border: 1px solid blue;
 border-radius: 5px;
 padding: 0.4375rem;
@@ -192,7 +196,7 @@ text-rendering: auto;
 letter-spacing:normal;
 }
 
-textarea {
+textarea. {
   font-size: 20px;
   padding: 25px;
   border: 3px solid --primary-shadow;
@@ -220,8 +224,15 @@ background-color: --primary-shadow;
 
 footer {
   padding: 0px;
-  margin: 10;
-  background-color: rgba(202, 129, 20, 0);
+  margin: 10px;
+  height: 75px;
+  background-color: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p{
+  text-align: center;
 }
 @media screen and (max-width: 700px){
 html {
@@ -232,18 +243,20 @@ html {
   .bio{
     margin-top: 0rem;
     display:column;
-height: 60vh;
+height: 85vh;
 width: 92vw;
 
   }
   li{
     display: block
     box-shadow: 0px 2px 15px 2px;
+    
   }
   nav{
     flex-direction: column;
     background:paleturquoise;;
     margin-bottom:0px;
+   
   }
   .coding{
     flex-direction: column;
@@ -255,29 +268,19 @@ width: 92vw;
     /* object-fit:contain; */
   }
 
-  .experienceTitle,#skills{
-    text-align: left;
-    box-shadow: 0px 2px 15px 2px;  
-    padding: 30px;  
-    background-color: var(--secondary-shadow)
-    
-  }
+ 
   .experienceTitle{
     margin-top:3rem;
     
   }
-  .experience{
-    border: none;
-    display: block;
-  }
+ 
   body{
     background-color: paleturquoise;
   }
-  form,.bio{
+  form,.bio,footer,.experience,.skills-list,.project-list{
     background:var(--secondary-shadow);
   }
 
- 
 }
 
 @media print{

@@ -42,8 +42,7 @@ messageForm.addEventListener("submit", (e) => {
   let newMessage = document.createElement("li");
   newMessage.innerHTML = `<a href=“mailto:${email}”>${name}</a>
             <span id ="spanMessage"> wrote: ${message}</span>`;
-  
-  
+
   // Add remove button to each message
   let removeButton = document.createElement("button");
   removeButton.innerHTML = "remove";
@@ -60,3 +59,22 @@ messageForm.addEventListener("submit", (e) => {
 
   messageForm.reset();
 });
+
+var githubRequest = new XMLHttpRequest();
+githubRequest.open("GET", "https://api.github.com/users/shondriane/repos");
+githubRequest.send();
+githubRequest.addEventListener("load", myEventListener);
+function myEventListener() {
+  const repositories = JSON.parse(this.response);
+  console.log(repositories);
+  const projectSection = document.getElementById("projects");
+  const projectList = document.querySelector(".project-list");
+  //repositories.length was changed to 2 to prevent showing all the repositories from showing
+  for (let i = 0; i < 2; i++) {
+    const project = document.createElement("a");
+    project.href = repositories[i].html_url;
+    project.target = "_blank";
+    project.innerText = repositories[i].name;
+    projectList.appendChild(project);
+  }
+}
