@@ -1,10 +1,11 @@
-#shondriane {
+#shondriane{
   text-align: center;
   padding: 30px;
-  font-family: cursive;
+  font-family: 'merriweather','money penny', 'dear joe 6';
+  color: black
 }
 body {
-  background-color: rgba(255, 235, 205, 0.945);
+  background-color: var(--bg-color);
   color: purple;
   font-size: 24px;
   margin: 30px;
@@ -159,8 +160,43 @@ margin: 10px;
 height: 150px;
 border: 2px solid var(--primary-shadow);
   }
-  
+ 
+  .projects{
+    background-color: var(--bg-color);
+    padding:32px 0;
+    margin-top: 2rem;
+  }
+  .project-pic{
+    width:60%;
+    height:55%;
+  }
+  .projects-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    width: 21.875rem;
+    padding:1rem;
+  }
+  h3,.project-details{
+    color:black;
+  }
+  .projects-title{
+    text-align: center;
+    margin-bottom:1rem;
+  }
+  .socials{
+    display:flex;
+    flex-direction:row;
+    position:fixed;
+    left: 2%;
+    bottom:40%
 
+  }
+  .socicon{
+    width: 2rem;
+    height:2rem;
+  }
 #contacts{
   list-style: none;
  
@@ -280,7 +316,18 @@ width: 92vw;
   form,.bio,footer,.experience,.skills-list,.project-list{
     background:var(--secondary-shadow);
   }
+  .project-pic{
+    width:100%;
+    height:50%;
+  }
+  .socials{
+    display:flex;
+    flex-direction:row;
+    position:fixed;
+    left: 2%;
+    bottom:30%
 
+  }
 }
 
 @media print{
