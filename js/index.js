@@ -12,10 +12,8 @@ const skills = [
   "Problem Solving",
   "Building Relationships",
   "Project Management",
-  "JavaScript",
-  "Git",
-  "CSS",
-  "HTML",
+  "Logistics",
+  "Sales",
 ];
 const skillsSection = document.getElementById("skills");
 const skillsList = document.querySelector(".skills-list");
