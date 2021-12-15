@@ -57,7 +57,7 @@ messageForm.addEventListener("submit", (e) => {
 
   messageForm.reset();
 });
-
+/*/COMMENTING OUT BECAUSE I PREFER TO USE HTTPS IN HTML CODE WILL NOT DISPLAY
 var githubRequest = new XMLHttpRequest();
 githubRequest.open("GET", "https://api.github.com/users/shondriane/repos");
 githubRequest.send();
@@ -67,12 +67,17 @@ function myEventListener() {
   console.log(repositories);
   const projectSection = document.getElementById("projects");
   const projectList = document.querySelector(".project-list");
-  //repositories.length was changed to 2 to prevent showing all the repositories from showing
-  for (let i = 0; i < 2; i++) {
-    const project = document.createElement("a");
-    project.href = repositories[i].html_url;
-    project.target = "_blank";
-    project.innerText = repositories[i].name;
-    projectList.appendChild(project);
+  //get all repositories using Ajax Fetch
+  fetch ('https://api.github.com/users/shondriane/repos')
+  .then(response=>response.json())
+  .then(repositories=>{
+    for (let i = 0; i < 2; i++) {
+      const project = document.createElement("a");
+      project.href = repositories[i].html_url;
+      project.target = "_blank";
+      project.innerText = repositories[i].name;
+      projectList.appendChild(project);
+    }
+        });
   }
-}
+*/
