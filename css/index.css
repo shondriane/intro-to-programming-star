@@ -158,7 +158,7 @@ flex-direction: column;
 justify-content: space-between;
 flex: center;
 list-style-type:none;
-padding: 20px;
+padding: 50px;
 margin: 10px;
 height: 150px;
 border: 2px solid var(--primary-shadow);
@@ -167,13 +167,14 @@ border: 2px solid var(--primary-shadow);
   scroll-margin-top:8em;
   color:var(--primary-shadow);
 }
-  #projects{
+  #projects, {
     background-color: var(--bg-color);
     padding:32px 0;
     margin-top: 2rem;
   }
 .projects-title{
   scroll-margin-top:5em;
+  margin-top: 2em;
 }
   .project-pic{
     width:60%;
@@ -185,9 +186,9 @@ border: 2px solid var(--primary-shadow);
     justify-content: center;
     text-align:center;
     width: 21.875rem;
-    padding:1rem;
+    padding:100rem;
   }
-  h3,.project-details{
+  .project-details{
     color:black;
   }
   .projects-title{
@@ -292,7 +293,7 @@ html {
   .bio{
     margin-top: 0rem;
     display:column;
-height: 85vh;
+height: 65vh;
 width: 92vw;
 
   }
@@ -326,7 +327,7 @@ width: 92vw;
   body{
     background-color: paleturquoise;
   }
-  form,.bio,footer,.experience,.skills-list,#projects,.project-list{
+  form,.bio,footer,.experience,.skills-list,.project-list{
     background:var(--secondary-shadow);
   }
   
