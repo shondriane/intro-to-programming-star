@@ -57,7 +57,7 @@ messageForm.addEventListener("submit", (e) => {
 
   messageForm.reset();
 });
-/*/COMMENTING OUT BECAUSE I PREFER TO USE HTTPS IN HTML CODE WILL NOT DISPLAY
+
 var githubRequest = new XMLHttpRequest();
 githubRequest.open("GET", "https://api.github.com/users/shondriane/repos");
 githubRequest.send();
@@ -80,4 +80,4 @@ function myEventListener() {
     }
         });
   }
-*/
+
